@@ -32,8 +32,8 @@ class NextServer {
         return this.handle(req, res);
       })
 
-      server.listen(process.env.PORT || 3000, () => {
-        console.log(`> Ready on http://localhost:${process.env.PORT || 3000}`);
+      server.listen(PORT || 3000, () => {
+        console.log(`> Ready on http://localhost:${PORT || 3000}`);
       })
     })
     .catch((ex:any) => {
